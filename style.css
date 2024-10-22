@@ -10,9 +10,23 @@
     line-height: 1.6;
 }
 
-.header, .section {
+.header > .wrapper, .section {
     display: flex;
     justify-content: center;
+}
+
+.stripe, .footer {
+    background: #663399;
+}
+
+.stripe {
+    z-index: -1;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    transform: skewY(-9deg);
+    bottom: 67%;
+    background: #663399;
 }
 
 .profile {
@@ -30,6 +44,7 @@
 .aboutMe {
     padding: 2rem;
     max-width: 80%;
+    background-color: #ffffff;
 }
 
 .aboutMe > h1, .aboutMe > p, .contact > * {
@@ -50,6 +65,7 @@
 
 .gojoProfilePicture {
     width: 30rem;
+    height: 100%;
 }
 
 .gojoName {
@@ -99,7 +115,6 @@
 }
 
 .footer {
-    background: #663399;
     display: flex;
     align-items: center;
     justify-content: center;
